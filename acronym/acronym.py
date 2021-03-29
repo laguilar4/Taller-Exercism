@@ -1,9 +1,8 @@
 def abbreviate(words):
     palabras = words
-    dividirpalabras = palabras.replace('_', ' ').replace('-', ' ').split()
+    separar = palabras.replace('_', ' ').replace('-', ' ').split()
     acronimo = ""
 
-    ## iterate through every substring
-    for i in dividirpalabras:
+    for i in separar:
         acronimo = acronimo + i[0].upper()
     return acronimo
